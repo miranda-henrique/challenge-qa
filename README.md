@@ -12,20 +12,19 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 
 **Especificações Técnicas**
 - Projeto em .Net8.0
-  - Reqnroll (ou Specflow)
+  - Reqnroll
   - Selenium
   - XUnit
-  - Fluent Assert
 
 1.2. Explore os fluxos presentes na aplicação Subscriptions e identifique regras e requisitos.
    - Acesse a aplicação [aqui](https://developer.grupoa.education/subscription).
    - Caso encontre algo que considere bug, reporte em um arquivo chamado `BUGS.md`.
 
-1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Reqnroll( ou Specflow).
+1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Reqnroll.
 
-1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Reqnroll (ou Specflow) e Selenium.
+1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Reqnroll e Selenium.
 
-1.5. Considerando que a aplicação aqui utilizada vai passar a persistir dados em banco de Dados PostgrSQL, descreva em um arquivo chamado `DATA.md` a estratégia que você utilizaria em relação a massa de dados de testes
+1.5. Considerando que a aplicação aqui utilizada vai passar a persistir dados em banco de Dados PostgrSQL, descreva em um arquivo chamado `DATA.md` a estratégia que você utilizaria em relação a criação e uso da massa de dados de testes
 
    ## _Atividade 2_
 2.1. Criar ao menos 3 cenários de teste de performance simulando cargas de 100, 500 e 1000 usuários simultâneos.
@@ -41,7 +40,7 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
       - /flip_coin.php
       - /my_messages.php
 
-  2.2.2. Descreva em um arquivo chamado `k6-data.md` a estratégia que você utilizaria em relação a massa de dados de testes com o K6
+  2.2.2. Descreva em um arquivo chamado `k6-data.md` a estratégia que você utilizaria em relação a criação e uso da massa de dados de testes com o K6
   
   2.2.3. Gere os resultados em html
 
@@ -50,6 +49,7 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 
 # Critérios de avaliação
 - Cenários identificados
+- Bugs identificados
 - Qualidade da escrita e uso adequado dos elementos da sintaxe Gherkin
 - Aplicação da técnica BRIEF
 - Aplicação de boas práticas de escrita de cenários
@@ -61,6 +61,7 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 - Utilização do Git (quantidade e descrição dos commits, Git Flow, ...)
 - Validações realizadas
 - Qualidade dos cenários previstos no item 2.1 da atividade 2
+- Qualidade no report de bugs
 
 ## Desejável
 - Componentizar os elementos das páginas com Selenium e utilizar estes componentes na automação
