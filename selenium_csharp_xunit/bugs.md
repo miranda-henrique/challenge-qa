@@ -1,0 +1,11 @@
+- Todos os cursos são listados, independentemente da opção de nível de ensino selecionada.
+- Campo "Possui alguma deficiência?" é obrigatório, embora não seja marcado como tal.
+- Campo "Data de nascimento" é marcado como obrigatório, mas é opcional.
+- Campo "Data de nascimento" não realiza validações e aceita que seja cadastrada a data atual, data futura e "dd/mm/aaaa".
+- Campos "Celular" e "Telefone" aceitam letras e caracteres especiais diferentes de "()" e "-"
+- Campo "CEP" aceita letras e caracteres especiais diferentes de "-" e "."
+- Campos "Nome", "Sobrenome", "Nome social", "Qual deficiência?", "Endereço", "Complemento", "Bairro", "Cidade", "Estado" e "País" não possuem nenhuma validação de caracteres, sendo possível, inclusive, inserir queries.
+- Após o envio dos dados cadastrais, informações de usuário e senha do candidato são exibidas em tela
+- Tela de login exibe mensagem de "Usuário inválido" caso nome de usuário informado não conste na base.
+- Campo de busca da área do candidato não filtra menus.
+- Melhoria: listar campos "Cidade", "Estado" e "País" ou como dropdown ou como campos pré-preenchidos com base no CEP informado.
