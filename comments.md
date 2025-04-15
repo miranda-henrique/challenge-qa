@@ -75,3 +75,16 @@ services:
 3. Há estruturas de lógica no código que se repetem e poderiam ser encapsuladas em um único método. Seria uma refatoração importante mas que, em parte, dependeria do ponto 1.
 4. Criaria uma pipeline automatizada e, de preferência, tentaria integrá-la ao azure.
 5. Implementaria relatórios com o ExtentRepors ou AllureReports.
+
+- Projeto de performance:
+    - Tecnologias utilizadas: Grafana K6 0.57 e javascript
+    - Validações envolveram testes de spike para 100, 500 e 1000 usuários simultâneos, assim como um testes de carga que mantem esse nível de usuários por um período um pouco mais longo a fim de avaliar o comportamento da API em cenário em que há espaço para alocação de novas máquinas, se necessário. Dependendo da estutura de infra utilizada, pode ser necessário ajustar os tempos utilizados.
+    - Seria interessante, em um momento futuro, a implementação de um teste de stress que verificasse o comportamento das APIs em um cenário de constante uso. É uma validação de resiliência que pode simular períodos em que há consumo elevado e regular delas.
+    - Para execução dos testes de carga, é necessário o comando
+    ```
+    K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=load-test-report-[altere-para-a-data-atual].html k6 run loadTest.js
+    ```
+    - Para a execução dos testes spike, basta que seja executado o comando
+    ```
+    k6 run [nome-do-script].js
+    ```
