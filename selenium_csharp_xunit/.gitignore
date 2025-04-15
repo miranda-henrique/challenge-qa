@@ -1,0 +1,81 @@
+# General settings
+*.log
+*.swp
+*.swo
+*.tmp
+*.tmp.*
+*.bak
+
+# Visual Studio temporary files
+*.suo
+*.user
+*.dbmdl
+*.pidb
+*.local
+*.aps
+*.opensdf
+*.sdf
+*.ipch/
+.vs
+
+# Build output
+bin/
+obj/
+publish/
+artifacts/
+
+# NuGet related files
+packages/
+*.nupkg
+
+# Docker related files
+Dockerfile
+docker-compose.yml
+
+# OS specific files
+.vscode/
+.idea/
+*.userosscache
+*.suo
+
+# Node.js related files (if you have a node_modules folder for K6)
+node_modules/
+
+# Selenium WebDriver cache
+webdriver-manager-cache/
+
+# VSIDX extension packages
+*.vsidx
+
+# K6 test scripts and reports
+results/
+
+# Test results
+TestResults/
+
+# Visual Studio Code workspace files
+.vscode/
+*.vsixmanifest
+
+# JetBrains Rider project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# NCrunch files
+.ncrunch
+
+# SonarQube files
+sonar-project.properties
+
+# Other general ignore rules
+*.tmp
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.gz
+*.tar.gz
