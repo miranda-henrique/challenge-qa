@@ -43,6 +43,9 @@ node_modules/
 # Selenium WebDriver cache
 webdriver-manager-cache/
 
+# VSIX extension packages
+*.vsix
+
 # K6 test scripts and reports
 results/
 
