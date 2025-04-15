@@ -9,7 +9,7 @@ namespace CadastroAlunoTest.Pages
 {
     public class SelecaoCursoPage(IWebDriver driver)
     {
-        private WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        private WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(8));
         public IWebElement TextoInicial => wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#app h3")));
         public IWebElement NivelEnsinoDropdown => wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("button[data-testid=\"education-level-select\"]")));
         public IWebElement NivelEnsinoSelect => wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#app select")));
@@ -47,9 +47,14 @@ namespace CadastroAlunoTest.Pages
             CursosInput.SendKeys(Keys.Enter);
 
         }
-        public void FocaElemento(IWebElement elemento)
+        
+        public void NavegaAteCadastro()
         {
-            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView();", elemento);
+            string curso = "Administração";
+
+            SelecionaNivelGraduacao();
+            SelecionaCurso(curso);
+            BotaoAvancar.Click();
         }
     }
 }
