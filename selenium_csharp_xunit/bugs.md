@@ -125,3 +125,5 @@
 ---
 
 ### Melhoria: listar campos "Cidade", "Estado" e "País" ou como dropdown ou como campos pré-preenchidos com base no CEP informado.
+
+### Melhoria: remover borda do checkbox "Possui deficiência", pois ele acaba de comportando da mesma forma como os demais elementos quando estão em cenário de exceção, o que não é o caso para esse campo em específico e pode gerar confusão para o usuário.
