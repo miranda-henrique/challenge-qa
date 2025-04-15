@@ -27,6 +27,7 @@ namespace CadastroAlunoTest.Pages
 
         public IWebElement InputPais => wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("input[data-testid=\"country-input\"]")));
         public IWebElement BotaoAvancar => wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("button[data-testid=\"next-button\"]")));
+        public IWebElement BotaoAcessaAreaCandidato => wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("button[data-testid=\"next-button\"]")));
         public IWebElement TextoSucessoCadastro => wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#app > main > section  h3")));
 
         public string RetornaTextoElemento(IWebElement element) => element.Text.Trim();
@@ -56,6 +57,13 @@ namespace CadastroAlunoTest.Pages
         {
             ReadOnlyCollection<IWebElement> elements = driver.FindElements(By.XPath($"//*[contains(text(), '{texto}')]"));
             return elements.Count;
+        }
+
+        public void NavegaAteLogin(CandidatoModel candidato)
+        {
+            PreencheFormulario(candidato);
+            BotaoAvancar.Click();
+            BotaoAcessaAreaCandidato.Click();
         }
     }
 }

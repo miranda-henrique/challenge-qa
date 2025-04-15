@@ -1,8 +1,7 @@
-using System;
 using CadastroAlunoTest.Models;
 using CadastroAlunoTest.Pages;
 using OpenQA.Selenium;
-using Reqnroll;
+
 
 namespace CadastroAlunoTest.StepDefinitions
 {
